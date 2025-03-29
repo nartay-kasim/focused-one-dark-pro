@@ -1,0 +1,21 @@
+{
+  "name": "focused-one-dark-pro",
+  "displayName": "Focused One Dark Pro",
+  "description": "A tweaked version of One Dark Pro Flag streamlined for Typescript and React.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.98.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Focused One Dark Pro",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Focused One Dark Pro-color-theme.json"
+      }
+    ]
+  }
+}
