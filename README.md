@@ -1,16 +1,29 @@
-# focused-one-dark-pro README
+# Focused Dark Theme for VS Code
 
-## Working with Markdown
+Focused Dark Theme is a clean, minimal, and visually balanced dark theme for Visual Studio Code. It is designed to reduce visual clutter and emphasize code structure through clear contrasts and subtle highlights. Inspired by the aesthetics of One Dark Pro Flat, this theme introduces a focused, purposeful design that prioritizes legibility and developer flow.
 
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
+## Features
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
+- Crisp dark background with high-contrast, non-garish text colors
+- Carefully selected syntax highlighting
+- Thoughtful design for UI elements like tabs, sidebars, and input fields
+- Built to support TypeScript, JavaScript, React (TSX/JSX)
+- Inspired by the clarity and polish of One Dark Pro Flat
 
-## For more information
+## Installation
 
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+1. Open **Extensions** in VS Code (⇧⌘X / Ctrl+Shift+X)
+2. Search for `Focused Dark Theme`
+3. Click **Install** and then select the theme via the Command Palette: `Preferences: Color Theme`
 
-**Enjoy!**
+## Screenshots
+
+// TODO
+
+## Attribution
+
+This theme is heavily inspired by **[One Dark Pro Flat](https://github.com/Binaryify/OneDark-Pro)**, an excellent and widely used theme. The theme would not exist without the solid design foundation provided by One Dark Pro Flat. Full credit to its creator and maintainers.
+
+## License
+
+MIT © 2025
