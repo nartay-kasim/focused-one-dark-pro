@@ -63,7 +63,7 @@
       }
     },
 
-    // TS FILE FUNCTION COLORS:
+    // TS FILE COLORS:
     {
       "name": "Token: Functions and Arrows",
       "scope": [
