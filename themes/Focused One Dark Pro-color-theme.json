@@ -4,24 +4,23 @@
   "semanticHighlighting": true,
   "semanticTokenColors": {
     "class": {
-      "foreground": "#e8c53b",
-      "fontStyle": "bold underline"
+      "foreground": "#e8c53b"
     },
     "enumMember": "#e8c53b",
     "interface": {
-      "foreground": "#c296fc"
+      "foreground": "#d5a3ff"
     },
     "type": {
-      "foreground": "#c296fc"
+      "foreground": "#d5a3ff"
     },
     "enum": {
-      "foreground": "#c296fc"
+      "foreground": "#d5a3ff"
     },
     "namespace": {
-      "foreground": "#c296fc"
+      "foreground": "#d5a3ff"
     },
-    "parameter": "#f1ebd4",
-    "property": "#f1ebd4"
+    "parameter": "#ffe0d7c9",
+    "property": "#ffe0d7c9"
   },
   "tokenColors": [
     // GENERAL:
@@ -38,7 +37,7 @@
       "name": "Token: TYPESCRIPT - File",
       "scope": ["source.ts", "meta.block.ts"],
       "settings": {
-        "foreground": "#e8c53b88"
+        "foreground": "#ffe0d7c9"
       }
     },
     {
@@ -52,14 +51,14 @@
       "name": "Token: TYPESCRIPT - methods",
       "scope": ["meta.method.declaration.ts", "meta.definition.method.ts"],
       "settings": {
-        "foreground": "#f1ebd4"
+        "foreground": "#9edf49"
       }
     },
     {
       "name": "Token: TYPESCRIPT - annotations",
       "scope": ["meta.type.annotation.ts", "entity.name.type.ts"],
       "settings": {
-        "foreground": "#f1ebd4"
+        "foreground": "#9edf49"
       }
     },
 
@@ -69,10 +68,14 @@
       "scope": [
         "meta.definition.function.ts",
         "variable.other.constant.js",
-        "meta.definition.function.js"
+        "meta.definition.function.js",
+        "meta.return.type.ts",
+        "meta.return.type.arrow.ts",
+        "meta.arrow.ts",
+        "meta.var.expr.ts"
       ],
       "settings": {
-        "foreground": "#08ce01",
+        "foreground": "#9edf49",
         "fontStyle": "bold"
       }
     },
@@ -80,7 +83,7 @@
       "name": "Token: Functions and Arrows",
       "scope": ["entity.name.function.ts, meta.definition.variable.ts"],
       "settings": {
-        "foreground": "#08ce01",
+        "foreground": "#9edf49",
         "fontStyle": "bold"
       }
     },
@@ -88,7 +91,7 @@
       "name": "Token: Functions and Arrows",
       "scope": ["variable.other.constant.ts"],
       "settings": {
-        "foreground": "#f1ebd4",
+        "foreground": "#f1ebd4a3",
         "fontStyle": "bold"
       }
     },
@@ -128,7 +131,44 @@
       ],
       "settings": {
         "foreground": "#f170bf",
-        "fontStyle": "bold underline"
+        "fontStyle": "bold"
+      }
+    },
+
+    // JSON:
+    {
+      "name": "JSON: Keys",
+      "scope": [
+        "meta.object-literal.key",
+        "support.type.property-name",
+        "string.key.json"
+      ],
+      "settings": {
+        "foreground": "#ffd866"
+      }
+    },
+    {
+      "name": "JSON: String Values",
+      "scope": ["string.quoted.double.json"],
+      "settings": {
+        "foreground": "#a9dc76"
+      }
+    },
+    {
+      "name": "JSON: Numbers",
+      "scope": ["constant.numeric.json"],
+      "settings": {
+        "foreground": "#fc9867"
+      }
+    },
+    {
+      "name": "JSON: Boolean / Null",
+      "scope": [
+        "constant.language.boolean.json",
+        "constant.language.null.json"
+      ],
+      "settings": {
+        "foreground": "#78dce8"
       }
     },
 
