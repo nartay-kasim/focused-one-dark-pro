@@ -3,105 +3,138 @@
   "type": "dark",
   "semanticHighlighting": true,
   "semanticTokenColors": {
-    "annotation:dart": {
-      "foreground": "#d19a66"
+    "class": {
+      "foreground": "#e8c53b",
+      "fontStyle": "bold underline"
     },
-    "enumMember": {
-      "foreground": "#56b6c2"
+    "enumMember": "#e8c53b",
+    "interface": {
+      "foreground": "#c296fc"
     },
-    "macro": {
-      "foreground": "#d19a66"
+    "type": {
+      "foreground": "#c296fc"
     },
-    "memberOperatorOverload": {
-      "foreground": "#c678dd"
+    "enum": {
+      "foreground": "#c296fc"
     },
-    "parameter.label:dart": {
-      "foreground": "#abb2bf"
+    "namespace": {
+      "foreground": "#c296fc"
     },
-    "property:dart": {
-      "foreground": "#d19a66"
-    },
-    "tomlArrayKey": {
-      "foreground": "#e5c07b"
-    },
-    "variable:dart": {
-      "foreground": "#d19a66"
-    },
-    "variable.constant": {
-      "foreground": "#d19a66"
-    },
-    "variable.defaultLibrary": {
-      "foreground": "#e5c07b"
-    }
+    "parameter": "#f1ebd4",
+    "property": "#f1ebd4"
   },
   "tokenColors": [
+    // GENERAL:
     {
-      "name": "Source (General)",
+      "name": "Token: General Source",
       "scope": "source",
       "settings": {
         "foreground": "#a0a0a0"
       }
     },
+
+    // TYPESCRIPT FILE COLORS:
     {
-      "name": "HTML Tags",
+      "name": "Token: TYPESCRIPT - File",
+      "scope": ["source.ts", "meta.block.ts"],
+      "settings": {
+        "foreground": "#e8c53b88"
+      }
+    },
+    {
+      "name": "Token: TYPESCRIPT - Class Name Underline & Bold",
+      "scope": ["entity.name.type.class.ts"],
+      "settings": {
+        "fontStyle": "bold underline"
+      }
+    },
+    {
+      "name": "Token: TYPESCRIPT - methods",
+      "scope": ["meta.method.declaration.ts", "meta.definition.method.ts"],
+      "settings": {
+        "foreground": "#f1ebd4"
+      }
+    },
+    {
+      "name": "Token: TYPESCRIPT - annotations",
+      "scope": ["meta.type.annotation.ts", "entity.name.type.ts"],
+      "settings": {
+        "foreground": "#f1ebd4"
+      }
+    },
+
+    // TS FILE FUNCTION COLORS:
+    {
+      "name": "Token: Functions and Arrows",
+      "scope": [
+        "meta.definition.function.ts",
+        "variable.other.constant.js",
+        "meta.definition.function.js"
+      ],
+      "settings": {
+        "foreground": "#08ce01",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Token: Functions and Arrows",
+      "scope": ["entity.name.function.ts, meta.definition.variable.ts"],
+      "settings": {
+        "foreground": "#08ce01",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Token: Functions and Arrows",
+      "scope": ["variable.other.constant.ts"],
+      "settings": {
+        "foreground": "#f1ebd4",
+        "fontStyle": "bold"
+      }
+    },
+
+    // TSX FILE COLORS:
+    {
+      "name": "Token: TSX - File",
+      "scope": ["source.tsx"],
+      "settings": {
+        "foreground": "#aaa2a7"
+      }
+    },
+    {
+      "name": "Token: TSX - HTML Tags",
       "scope": "entity.name.tag",
       "settings": {
         "foreground": "#f170bf"
       }
     },
     {
-      "name": "Actions (Functions, Methods)",
-      "scope": ["entity.name.function.member"],
-      "settings": {
-        "foreground": "#e8c53b"
-      }
-    },
-    {
-      "name": "Nouns (Types, Interfaces, Classes, Enums)",
+      "name": "Token: TSX - Function Components",
       "scope": [
-        "entity.name.type",
-        "entity.name.class",
-        "entity.name.enum",
-        "entity.name.interface",
-        "storage.type",
-        "keyword.other.special-method",
-        "support.function",
-        "storage.modifier"
+        "entity.name.function.tsx, meta.block.tsx meta.arrow.tsx meta.var.expr.tsx"
       ],
       "settings": {
-        "foreground": "#eeeccfd5"
+        "foreground": "#aaa2a7",
+        "fontStyle": "bold underline"
       }
     },
     {
-      "name": "Nouns (Types, Interfaces, Classes, Enums)",
+      "name": "Token: TSX - Function Names Returning TSX",
       "scope": [
-        "entity.name.type",
-        "entity.name.class",
-        "entity.name.enum",
-        "entity.name.interface"
+        "entity.name.function.tsx",
+        "meta.arrow.tsx entity.name.function.tsx",
+        "meta.variable.assignment.tsx entity.name.function",
+        "meta.var.expr.tsx entity.name.function"
       ],
       "settings": {
-        "fontStyle": "bold"
+        "foreground": "#f170bf",
+        "fontStyle": "bold underline"
       }
     },
+
+    // OTHER, MISCELLANEOUS, UNSUPPORTED:
     {
-      "name": "Statics (Constants, Primitives, let variables)",
-      "scope": [
-        "constant.language",
-        "constant.numeric",
-        "constant.character",
-        "constant.other",
-        "variable.other.constant",
-        "variable.other.readwrite",
-        "support.constant",
-        "meta.object-literal.key"
-      ],
-      "settings": {
-        "foreground": "#d4acf6"
-      }
-    },
-    {
-      "name": "Other (Everything else)",
+      "name": "Token: Other",
       "scope": ["*"],
       "settings": {
         "foreground": "#ff5e5e"
